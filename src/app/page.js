@@ -2,7 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 
-export default function Home() {
+export default async function Home({searchParams}) {
+  const params = await searchParams
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -21,6 +22,9 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
           <li>
             <Link href={"/about"}>About</Link>
+          </li>
+          <li>
+            Time {Date.now()}
           </li>
         </ol>
 
