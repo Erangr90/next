@@ -1,8 +1,7 @@
 name: Deploy Next
 on:
   push:
-    branches:
-      - main # check your repo, your default branch might be master!
+    branches: ["main"]
 
 jobs:
   build:
