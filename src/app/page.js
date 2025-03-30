@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,9 +16,12 @@ export default function Home() {
         />
         <ol>
           <li>
-            Get started by editing <code>src/app/page.js</code>.
+            Eran Grady <code>src/app/page.js</code>.
           </li>
           <li>Save and see your changes instantly.</li>
+          <li>
+            <Link href={"/about"}>About</Link>
+          </li>
         </ol>
 
         <div className={styles.ctas}>
